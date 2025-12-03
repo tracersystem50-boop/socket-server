@@ -4,10 +4,10 @@ import { Server } from 'socket.io';
 import cors from 'cors';
 
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const server = http.createServer(app);
 
-const hostName = 'http://127.0.0.1:8000';
+const hostName = 'https://tracersystem50.great-site.net';
 
 // Use CORS middleware
 app.use(cors({
