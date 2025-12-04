@@ -17,7 +17,7 @@ app.use(cors({
     credentials:true
 }));
 
-app.options('/**', cors());
+// app.options('/**', cors());
 const io = new Server(server, {
     cors: {
         origin: hostName, // Replace with your front-end URL
